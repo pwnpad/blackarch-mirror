@@ -165,7 +165,7 @@ update_pacman_conf()
   cat >> "/etc/pacman.conf" << EOF
 [blackarch]
 Include = /etc/pacman.d/$MIRROR_F
-SigLevel = Optional TrustAll
+SigLevel = Never
 EOF
 }
 
