@@ -146,7 +146,7 @@ install_keyring()
 get_mirror()
 {
   mirror_p="/etc/pacman.d"
-  mirror_r="https://blackarch.org"
+  mirror_r="https://raw.githubusercontent.com/pwnpad/blackarch-mirror/master"
 
   msg "fetching new mirror list..."
   if ! curl -s "$mirror_r/$MIRROR_F" -o "$mirror_p/$MIRROR_F" ; then
